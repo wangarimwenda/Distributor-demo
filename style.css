@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #004080;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: #00264d;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
+    height: 90vh;
+    background: url('pharma-banner.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    color: white;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #00aaff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    margin-top: 60px;
+    border-radius: 8px;
+}
+
+.section.light {
+    background-color: #e9f4ff;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #004080;
+}
+
+.services-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    flex: 1 1 30%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    background-color: #001f33;
+     color: white;
+    text-align: center;
+    padding: 20px;
+}
+@media only screen and (min-width: 768px) 
+{
+    .full {
+    display: flex;
+  }
+
+  .mobile {
+    display: none;
+  }
+    .hero {
+        height: 100vh;
+    }
+
+    .section {
+        padding: 100px 40px;
+    }
+
+    .services-grid {
+        gap: 30px;
+    }
+
+    .service-card {
+        flex: 1 1 30%;
+    }
+   
+  .full {
+    display: flex;
+  }
+
+  .mobile {
+    display: none;
+  }}
